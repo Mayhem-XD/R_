@@ -25,16 +25,15 @@ ex2
 varx = ex2 - ex^2
 varx                    # 분산, 1
 
-## 주사위를 2회 던졌을때 3의 배수의 개수
-
-x = c(0, 1, 2)      # 0번 1번 2번
+### 주사위를 2회 던졌을 때 3의 배수의 갯수
+x = c(0, 1, 2)
 px = c(4/9, 4/9, 1/9)
-ex = sum(x * px)
+ex = sum(x * px)        # 기댓값, 2/3
 ex
 
-x2 = x^2
+x2 = x ^ 2
 x2
-ex2 = sum(x2 *px)
+ex2 = sum(x2 * px)
 ex2
-varx = ex2 - ex^2
+varx = ex2 - ex^2       # 분산, 4/9
 varx

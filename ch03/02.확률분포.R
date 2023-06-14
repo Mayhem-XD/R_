@@ -105,27 +105,3 @@ s.z <- dnorm(s, mean=0, sd=1)
 s <- c(-1.96, s, 1.96)
 s.z <- c(0, s.z, 0)
 polygon(s, s.z, col="red", density=10, angle=305)
-
-z <- seq(-3, 3, by=0.001)
-z.p <- dnorm(z)
-plot(z, z.p, axes=F, type="l", 
-     main="표준정규분포 (99%)", ylab="", ylim=c(-0.04, 0.4))
-axis(1)
-
-lines(c(-3, 3), c(0, 0))
-points(-2.576, -0.02, pch=17, col="red")
-text(-2.576, -0.035, "-2.576", col="red")
-points(2.576, -0.02, pch=17, col="red")
-text(2.576, -0.035, "2.576", col="red")
-
-s <- seq(-2.576, 2.576, by=0.001)
-s.z <- dnorm(s, mean=0, sd=1)
-s <- c(-2.576, s, 2.576)
-s.z <- c(0, s.z, 0)
-polygon(s, s.z, col="red", density=10, angle=305)
-
-
-
-
-
-
