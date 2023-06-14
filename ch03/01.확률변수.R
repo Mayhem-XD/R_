@@ -24,3 +24,17 @@ ex2 = sum(x2 * px)
 ex2
 varx = ex2 - ex^2
 varx                    # 분산, 1
+
+## 주사위를 2회 던졌을때 3의 배수의 개수
+
+x = c(0, 1, 2)      # 0번 1번 2번
+px = c(4/9, 4/9, 1/9)
+ex = sum(x * px)
+ex
+
+x2 = x^2
+x2
+ex2 = sum(x2 *px)
+ex2
+varx = ex2 - ex^2
+varx
